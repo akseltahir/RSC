@@ -1,0 +1,4 @@
+#!/bin/bash
+source /etc/profile.d/zz_00-lmod.sh
+ml Anaconda3/2020.07
+jupyter notebook
