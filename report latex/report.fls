@@ -51,5 +51,7 @@ INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.bbl
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.bbl
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.11)  7 MAY 2021 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.9.11)  8 MAY 2021 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -123,30 +123,142 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package natbib Warning: Citation `1' on page 2 undefined on input line 48.
+Package natbib Warning: Citation `rachmadi' on page 2 undefined on input line 48.
 
 (/user/HS127/at01053/COM3025/RSC/report latex/report.bbl
+** WARNING: IEEEtranN.bst: No hyphenation pattern has been
+** loaded for the language `English'. Using the pattern for
+** the default language instead.
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:30: Missing $ inserted.
+<inserted text> 
+                $
+l.30 ...ite____::203929aafebe8a9e65d676b893571658}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Package natbib Warning: Empty `thebibliography' environment on input line 25.
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:30: Missing { inserted.
+<to be read again> 
+                   _
+l.30 ...ite____::203929aafebe8a9e65d676b893571658}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:30: Missing { inserted.
+<to be read again> 
+                   _
+l.30 ...ite____::203929aafebe8a9e65d676b893571658}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:30: Missing { inserted.
+<to be read again> 
+                   _
+l.30 ...ite____::203929aafebe8a9e65d676b893571658}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:32: Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:32: Missing } inserted.
+<inserted text> 
+                }
+l.32 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:32: Missing } inserted.
+<inserted text> 
+                }
+l.32 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:32: Missing } inserted.
+<inserted text> 
+                }
+l.32 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:32: Missing } inserted.
+<inserted text> 
+                }
+l.32 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (45.6689pt too wide) in paragraph at lines 27--32
+\OT1/cmr/m/n/12 https://explore.openaire.eu/search/publication?articleId=datacite$[]$ 
+ []
+
+[2]
+/user/HS127/at01053/COM3025/RSC/report latex/report.bbl:32: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.32 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 )
 
 Package natbib Warning: There were undefined citations.
 
-[2] [3] (/user/HS127/at01053/COM3025/RSC/report latex/report.aux) ) 
+[3] (/user/HS127/at01053/COM3025/RSC/report latex/report.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+) ) 
 Here is how much of TeX's memory you used:
- 1101 strings out of 492982
- 14924 string characters out of 6134896
- 78333 words of memory out of 5000000
- 4712 multiletter control sequences out of 15000+600000
+ 1104 strings out of 492982
+ 14978 string characters out of 6134896
+ 78332 words of memory out of 5000000
+ 4715 multiletter control sequences out of 15000+600000
  8808 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,19p,192b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "/user/HS127/at01053/COM3025/RSC/report latex/report.pdf" (3 pages, 48636 bytes).
+ 23i,6n,19p,197b,208s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb>
+Output written on "/user/HS127/at01053/COM3025/RSC/report latex/report.pdf" (3 pages, 67157 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
- 17 compressed objects within 1 object stream
+ 34 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
