@@ -1,42 +1,47 @@
-\documentclass[12pt]{article}
-\usepackage{geometry}
-\usepackage{natbib}
+\documentclass[12pt, landscape]{article}
+\usepackage[a2paper]{geometry}
+\usepackage[numbers]{natbib}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{setspace}
+\setlength{\columnsep}{1cm}
 
+%\doublespacing
 % \documentclass[12pt,landscape]{article}
 % \usepackage[a3paper]{geometry}
 
-\title{Road Sign Classification and Detection with CNN and RCNN [Recognition?]}
+\title{Road Sign Recognition with CNN and RCNN}
 \author{Aksel Tahir 6548051}
 \date{11.05.2021}
 
-
 \begin{document}
 \maketitle
-
 \tableofcontents
+\pagebreak
 
+\begin{multicols}{3}
 \section{Introduction}
-
-A fundamental part of all road infrastructure is the traffic sign system. Any
-road intended for vehicular use is incomplete without the implementation of a
-traffic sign system. They are of critical importance to interpreting correct
-road usage, road regulations and route recommendations. Their presence is
-integral to the safe and functional road use.
+Road signs are a present system in virtually all road infrastructure. They are
+of critical importance to interpreting correct road usage, road regulations and
+route recommendations. Their presence is integral to the safe and functional
+road use.
 
 Contemporary road signs follow strict design rules to optimise their clarity of
 intention. These rules allow them to be as easy as possible for human
 interpretation. However, humans are prone to distraction, misinterpretation and
-other general mistakes, which is why developing road sign classification
-(RSC[?]) algorithms is a huge part of the automation of driving. Standard
-computer vision methods are not versatile enough to deal with the plethora of
-different physical conditions on roads. This is why applying a deep learning
-approach to the problem is necessary - A well crafted AI can exceed even human
-vision in RSC[?].
+other general mistakes, which is why road sign recognition (RSR) algorithms
+are a fast-advancing point of development in autonomous driving research.
 
-In this project we propose an RSC[?] system by applying several neural network
-models and evaluating their performance. [talk about CNN, RCNN, YOLO, other
-models we'll use].
+Standard computer vision methods are not versatile enough to deal with the
+plethora of different physical road conditions. This is why applying a deep
+learning approach to the problem is necessary - A well crafted AI can exceed
+even human vision in RSR.
 
+In this project we propose an RSR solution using several different neural
+network models and evaluating their performance. Since standard computer vision
+methods are not versatile enough to deal with the plethora of different physical
+road conditions, it is necessary to apply a deep learning approach to the
+problem - A well crafted AI can exceed even human vision in RSR.
 
 \section{Related Work}
 With the advent of AI computing autonomous and assisted driving has been an area
@@ -44,14 +49,15 @@ of extensive research. Road sign recognition (RSR) systems are integral to the
 field. The functional implementation of RSR systems depends on two related
 issues - Road sign detection (RSD) and road sign classification (RSC). RSD
 pertains to localising the relevant information from the data, and RSC to
-identifying the data with its correct labels.
-\cite[1]{rachmadi} 
+identifying the data with its correct labels. Lots of outstanding results for
+the detection and classification of traffic signs have been proposed in
+\citep{Classification1}, \citep{Classification2}, \citep{Classification3},
+\citep{Classification4}, \citep{Classification5}, 
 
 \section{Architectures}
 \subsection{CNN}
-\subsection{GNN}
-\subsection{RCNN}
-\subsection{Faster-RCNN}
+\subsection{R-CNN}
+\subsection{Faster R-CNN}
     
 \section{Dataset}
 \subsection{Loading the dataset}
@@ -59,8 +65,8 @@ identifying the data with its correct labels.
 
 \section{Implementation}
 \subsection{CNN}
-\subsection{GNN}
-\subsection{Faster-RCNN}
+\subsection{R-CNN}
+\subsection{Faster R-CNN}
 
 \section{Analysis and Evaluation}
 
@@ -68,7 +74,8 @@ identifying the data with its correct labels.
 
 % \section{References}
 
-\bibliographystyle{IEEEtranN}
+\bibliographystyle{unsrt}
 \bibliography{References}
-
+\nocite{*}
+\end{multicols}
 \end{document}

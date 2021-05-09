@@ -1,4 +1,4 @@
-@misc{rachmadi,
+@misc{arachmadi,
 author = {Rachmadi,Reza F. and Uchimura,Keiichi and Komokata,Yoshinori},
 year={2016},
 month={Jan 01,},
@@ -6,7 +6,7 @@ title={Japan road sign classification using cascade convolutional neural network
 journal={23 rd ITS World Congress},
 pages={10},
 language={English},
-url={https://explore.openaire.eu/search/publication?articleId=datacite____::203929aafebe8a9e65d676b893571658},
+url={https://explore.openaire.eu/search/publication?articleId=datacite\_\_\_\_::203929aafebe8a9e65d676b893571658},
 }
 
 @misc{rachmadi1,
@@ -70,4 +70,74 @@ pages={555-559},
 abstract={Detection of traffic signs plays an important role in autonomous driving, traffic surveillance and traffic safety. Previous research in Traffic Sign Detection (TSD) generally focused on traffic signs which are over the roads, the traffic signs on road surface have not been discussed. In this paper, we propose a road surface traffic sign detection system by applying convolutional neural network (CNN). The proposed system consists of two main stages: 1) a hybrid region proposal method to hypothesize the traffic sign locations by taking into account complementary information of color and edge; 2) feature extraction, classification, bounding box regression and non-maximum suppression by Fast R-CNN. Extensive experiments have been conducted using our field-captured dataset, demonstrating outstanding performance with regard to high recall and precision rate. The overall average precision (AP) is about 85.58%.},
 language={English},
 url={https://ieeexplore.ieee.org/document/7603233},
+}
+
+@INPROCEEDINGS{Classification1,
+author={Mehta, Smit and Paunwala, Chirag and Vaidya, Bhaumik},
+booktitle={2019 International Conference on Intelligent Computing and Control Systems (ICCS)}, 
+title={CNN based Traffic Sign Classification using Adam Optimizer}, 
+year={2019},
+volume={},
+number={},
+pages={1293-1298},
+doi={10.1109/ICCS45141.2019.9065537}}
+
+@article{Classification2,
+author={Zhang,Jianming and Wang,Wei and Lu,Chaoquan and Wang,Jin and Sangaiah,Arun K.},
+year={2020},
+month={Aug},
+title={Lightweight deep network for traffic sign classification},
+journal={Annales des télécommunications},
+volume={75},
+number={7-8},
+pages={369-379},
+abstract={Deeper neural networks have achieved great results in the field of computer vision and have been successfully applied to tasks such as traffic sign recognition. However, as traffic sign recognition systems are often deployed in resource-constrained environments, it is critical for the network design to be slim and accurate in these instances. Accordingly, in this paper, we propose two novel lightweight networks that can obtain higher recognition precision while preserving less trainable parameters in the models. Knowledge distillation transfers the knowledge in a trained model, called the teacher network, to a smaller model, called the student network. Moreover, to improve the accuracy of traffic sign recognition, we also implement a new module in our teacher network that combines two streams of feature channels with dense connectivity. To enable easy deployment on mobile devices, our student network is a simple end-to-end architecture containing five convolutional layers and a fully connected layer. Furthermore, by referring to the values of batch normalization (BN) scaling factors towards zero to identify insignificant channels, we prune redundant channels from the student network, yielding a compact model with accuracy comparable to that of more complex models. Our teacher network exhibited an accuracy rate of 93.16% when trained and tested on the CIFAR-10 general dataset. Using the knowledge of our teacher network, we train the student network on the GTSRB and BTSC traffic sign datasets. Thus, our student model uses only 0.8 million parameters while still achieving accuracy of 99.61% and 99.13% respectively on both datasets. All experimental results show that our lightweight networks can be useful when deploying deep convolutional neural networks (CNNs) on mobile embedded devices.},
+isbn={0003-4347},
+language={English},
+url={https://search.proquest.com/docview/2431252962},
+}
+
+@inproceedings{Classification3,
+author={S. Mehta and C. Paunwala and B. Vaidya},
+editor={ },
+year={2019},
+title={CNN based Traffic Sign Classification using Adam Optimizer},
+booktitle={- 2019 International Conference on Intelligent Computing and Control Systems (ICCS)},
+pages={1293-1298},
+note={ID: 1},
+isbn={NULL-},
+}
+
+@inproceedings{Classification4,
+author={Ciresan,D. and Meier,U. and Masci,J. and Schmidhuber,J.},
+editor={ },
+year={Jul 2011},
+title={A committee of neural networks for traffic sign classification},
+publisher={IEEE},
+pages={1918-1921},
+abstract={We describe the approach that won the preliminary phase of the German traffic sign recognition benchmark with a better-than-human recognition rate of 98.98%.We obtain an even better recognition rate of 99.15% by further training the nets. Our fast, fully parameterizable GPU implementation of a Convolutional Neural Network does not require careful design of pre-wired feature extractors, which are rather learned in a supervised way. A CNN/MLP committee further boosts recognition performance.},
+isbn={2161-4393},
+language={English},
+url={https://ieeexplore.ieee.org/document/6033458},
+}
+
+@article{Classification5,
+author={Haloi,Mrinal},
+year={2015},
+month={Nov 10,},
+title={Traffic Sign Classification Using Deep Inception Based Convolutional Networks},
+abstract={In this work, we propose a novel deep network for traffic sign classification
+that achieves outstanding performance on GTSRB surpassing all previous methods.
+Our deep network consists of spatial transformer layers and a modified version
+of inception module specifically designed for capturing local and global
+features together. This features adoption allows our network to classify
+precisely intraclass samples even under deformations. Use of spatial
+transformer layer makes this network more robust to deformations such as
+translation, rotation, scaling of input images. Unlike existing approaches that
+are developed with hand-crafted features, multiple deep networks with huge
+parameters and data augmentations, our method addresses the concern of
+exploding parameters and augmentations. We have achieved the state-of-the-art
+performance of 99.81\% on GTSRB dataset.},
+language={English},
+url={https://arxiv.org/abs/1511.02992},
 }

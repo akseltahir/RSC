@@ -1,16 +1,15 @@
 \contentsline {section}{\numberline {1}Introduction}{2}
 \contentsline {section}{\numberline {2}Related Work}{2}
-\contentsline {section}{\numberline {3}Architectures}{3}
-\contentsline {subsection}{\numberline {3.1}CNN}{3}
-\contentsline {subsection}{\numberline {3.2}GNN}{3}
-\contentsline {subsection}{\numberline {3.3}RCNN}{3}
-\contentsline {subsection}{\numberline {3.4}Faster-RCNN}{3}
-\contentsline {section}{\numberline {4}Dataset}{3}
-\contentsline {subsection}{\numberline {4.1}Loading the dataset}{3}
-\contentsline {subsection}{\numberline {4.2}Preprocessing data}{3}
-\contentsline {section}{\numberline {5}Implementation}{3}
-\contentsline {subsection}{\numberline {5.1}CNN}{3}
-\contentsline {subsection}{\numberline {5.2}GNN}{3}
-\contentsline {subsection}{\numberline {5.3}Faster-RCNN}{3}
-\contentsline {section}{\numberline {6}Analysis and Evaluation}{3}
-\contentsline {section}{\numberline {7}Conclusions}{3}
+\contentsline {section}{\numberline {3}Architectures}{2}
+\contentsline {subsection}{\numberline {3.1}CNN}{2}
+\contentsline {subsection}{\numberline {3.2}R-CNN}{2}
+\contentsline {subsection}{\numberline {3.3}Faster R-CNN}{2}
+\contentsline {section}{\numberline {4}Dataset}{2}
+\contentsline {subsection}{\numberline {4.1}Loading the dataset}{2}
+\contentsline {subsection}{\numberline {4.2}Preprocessing data}{2}
+\contentsline {section}{\numberline {5}Implementation}{2}
+\contentsline {subsection}{\numberline {5.1}CNN}{2}
+\contentsline {subsection}{\numberline {5.2}R-CNN}{2}
+\contentsline {subsection}{\numberline {5.3}Faster R-CNN}{2}
+\contentsline {section}{\numberline {6}Analysis and Evaluation}{2}
+\contentsline {section}{\numberline {7}Conclusions}{2}
