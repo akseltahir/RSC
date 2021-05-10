@@ -29,6 +29,12 @@ Mrinal Haloi.
   networks.
 \newblock Nov 10, 2015.
 
+\bibitem{Recognition1}
+Amal Bouti, Med~A. Mahraz, Jamal Riffi, and Hamid Tairi.
+\newblock A robust system for road sign detection and classification using
+  lenet architecture based on convolutional neural network.
+\newblock {\em Soft computing (Berlin, Germany)}, 24(9):6721--6733, May 2020.
+
 \bibitem{arachmadi}
 Reza~F. Rachmadi, Keiichi Uchimura, and Yoshinori Komokata.
 \newblock Japan road sign classification using cascade convolutional neural
@@ -64,5 +70,11 @@ Rongqiang Qian, Qianyu Liu, Yong Yue, Frans Coenen, and Bailing Zhang.
 \newblock Road surface traffic sign detection with hybrid region proposal and
   fast r-cnn.
 \newblock pages 555--559. IEEE, Aug 2016.
+
+\bibitem{Shustanov}
+Alexander Shustanov and Pavel Yakimov.
+\newblock Cnn design for real-time traffic sign recognition.
+\newblock {\em Procedia Engineering}, 201:718--725, 2017.
+\newblock ID: 278653.
 
 \end{thebibliography}
