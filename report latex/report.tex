@@ -1,4 +1,4 @@
-\documentclass[12pt, landscape, margin=2cm]{article}
+\documentclass[12pt, landscape]{article}
 \usepackage[a2paper]{geometry}
 \usepackage[numbers]{natbib}
 \usepackage{multicol}
@@ -172,8 +172,13 @@ dataset.
 
 \subsection{CNN}
 Modelling our CNN is very straightforward with Keras. The model we've
-implemented closely resembles LeNet, proposed by Yann LeCun et al in 1998. The
+implemented closely resembles LeNet (Figure~\ref{fig:figurelenet}), proposed by Yann LeCun et al in 1998. The
 dataset we've trained the model upon is the GTSRB.
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.2]{lenet.png}}
+    \caption{Generic LeNet structure}
+    \label{fig:figurelenet}
+\end{figure}
 
 \subsubsection{Structure}
 \begin{figure}[H]
@@ -223,7 +228,6 @@ throughout training
 \section{Analysis and Evaluation}
 \section{Conclusions}
 \lipsum*[3]
-% \section{References}
 
 \bibliographystyle{unsrt}
 \bibliography{References}

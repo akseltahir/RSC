@@ -211,6 +211,9 @@ INPUT ./images/download.png
 INPUT ./images/download.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/lenet.png
+INPUT ./images/lenet.png
+INPUT ./images/lenet.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/model.png
 INPUT ./images/model.png
 INPUT ./images/model.png
