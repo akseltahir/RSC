@@ -173,7 +173,7 @@ dataset.
 \section{Implementation}
 
 \subsection{CNN-A}
-Modelling the CNN is very straightforward with Keras. The model we've chosen the
+Modelling this CNN is very straightforward with Keras. The model we've chosen the
 CNN-A implementation closely resembles LeNet (Figure~\ref{fig:figurelenet}),
 proposed by Yann LeCun et al in 1998. The dataset we've trained the model upon
 is the GTSRB.
@@ -206,15 +206,7 @@ used. A second dropout layer prepares the model for the a last fully connected
 dense layer with class number as size (ie. 43). Softmax is used to return the
 probabilities of each class, and the model is compiled with the Adam optimiser.
 
-Within 10 epochs, the accuracy of both training and validation is above 0.98,
-after which the model shows minimal improvements and the cost/ gain balance
-becomes unreasonable.
-
 \subsubsection{Performance}
-This model achieved formidable results with relatively light training. After
-roughly 30 minutes on Heron labs computers and 10 epochs the test accuracy
-averaged in the 98th percentile. Figure~\ref{fig:acc} shows the relevant values
-throughout training
 \begin{figure}[H]
     \centering
     \begin{tabular}{cc}
@@ -224,15 +216,56 @@ throughout training
     \caption{The Loss and Accuracy values throughout the epochs}
     \label{fig:acc}
 \end{figure}
+Within 10 epochs, the accuracy of both training and validation is above 0.98,
+after which the model shows minimal improvements and the cost/ gain balance
+becomes unreasonable.
+
+This model achieved formidable results with relatively light training. After
+roughly 30 minutes on Heron labs computers and 10 epochs the test accuracy
+averaged in the 98th percentile. Figure~\ref{fig:acc} shows the relevant values
+throughout training
 
 \subsection{CNN-K}
+Along with the difference in preprocessing, this implementation uses a different
+model structure than the one in CNN-A. CNN-K studies two models, but in this
+poster we will only look at the one reaching better results for the sake of
+being concise.
 
+\subsubsection{Structure}
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.5]{figuremodel1.png}}
+    \caption{Structure of our CNN-K model}
+    \label{fig:figuremodel1}
+\end{figure}
+Unlike the CNN-A implementation, this one beings with a convolutional layer of a
+32,32,32 shape. An activation layer preceeds the second convolution. There is a
+second activation, after which the data is reshaped in a max pooling grid.
+
+It undergoes dropout and flattening, and the 8th layer is the first dense layer.
+Another activation and dropout later, the data passes through the final dense
+and activation layers and the output shape is 43, denoting the classes.
+
+\subsubsection{Performance}
+\begin{figure}[H]
+    \centering
+    \begin{tabular}{cc}
+    \includegraphics[scale=0.45]{Kresult1.png}&
+    \includegraphics[scale=0.45]{Kresult.png}\\
+    \end{tabular}
+    \caption{The Loss and Accuracy values throughout the epochs}
+    \label{fig1:acc}
+\end{figure}
+The model is fitted with 30 epochs, but as with the previous implementation, the
+accuracy of both training and validation is above 0.98, after which the model
+shows minimal improvements and the cost/gain balance becomes unreasonable.
 
 \subsection{R-CNN}
 \subsection{Faster R-CNN}
 
 \section{Cross-Model Analysis}
 \section{Conclusions}
+data goes in and numbers come out and we don't question any of it
+
 
 \bibliographystyle{unsrt}
 \bibliography{References}

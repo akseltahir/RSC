@@ -13,6 +13,8 @@
 \contentsline {subsubsection}{\numberline {5.1.1}Structure}{3}
 \contentsline {subsubsection}{\numberline {5.1.2}Performance}{3}
 \contentsline {subsection}{\numberline {5.2}CNN-K}{3}
+\contentsline {subsubsection}{\numberline {5.2.1}Structure}{3}
+\contentsline {subsubsection}{\numberline {5.2.2}Performance}{3}
 \contentsline {subsection}{\numberline {5.3}R-CNN}{3}
 \contentsline {subsection}{\numberline {5.4}Faster R-CNN}{3}
 \contentsline {section}{\numberline {6}Cross-Model Analysis}{3}
