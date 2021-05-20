@@ -160,16 +160,68 @@ the 80\% chosen for training, 20\% were chosen for validation.
 \subsubsection{Preprocessing data}
 There are quite a few tasks to be done with preprocessing the data from this
 dataset. 
-\begin{enumerate}
-    \item
-    The uneven distribution from Figure~\ref{fig:figure} needs to be processed
-    to make every class equal. At the time of writing this has not been
-    implemented.
-    \item In CNN-A, the images are augmented - They are converted to a
-    monochromatic greyscale and then undergo histogram equalisation. Finally
-    their values are normalised from 0-255 to 0-1.
-\end{enumerate}
 
+\paragraph{Dataset Balancing}
+Data imbalance reflects an unequal distribution of classes within the dataset,
+as we can see in Figure~\ref{fig:figure}. This disproportion needs to be leveled
+out for better classification. We do this with two techniques - \emph{undersampling}
+and \emph{oversampling}
+
+Since we have such a huge imbalance in class values, using either an
+undersampling or oversampling algorithm would not work well. This is why we take
+a more nuanced approach of using both algorithms to make an augmented dataset
+with values meeting somewhere in the middle of both extremes.
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.2]{classbalance.png}}
+    \caption{Class balance point}
+    \label{fig:figurebalance}
+\end{figure}
+Figure~\ref{fig:figurebalance} shows a close approximation of the average value
+each class should achieve. Accordingly, we oversample the ones below the line
+and undersample the ones above it.
+
+To undersample, we simply take random values from the larger classes and remove
+them until they reach the midpoint.
+
+To oversample, we are trying out a few different algorithms. SMOTE is one of
+them, which synthesizes new examples for the minority classes. As described by
+\citep[Nitesh Chawla et al]{SMOTE} in their paper, SMOTE works by selecting
+examples that are close in the feature space, drawing a line between the
+examples in it and drawing a new sample at a point along that
+line.
+
+
+\paragraph{Image Augmentation}
+In CNN-A, the images are augmented - They are converted to a
+monochromatic greyscale and then undergo histogram equalisation. Finally
+their values are normalised from 0-255 to 0-1.
+
+Other augmentations the team has considered is using synthetic noise addition in
+order to test the accuracy of the model against more obscured data, simulating
+real life conditions such as rain and mist, but as of writing this
+implementation has not been completed.
+
+
+\subsection{GTSDB - German Traffic Sign Detection Benchmark}
+The previous dataset was very useful for RSC, but it did not contain the needed
+info for RSD. This is why we're also incorporating the GTSDB for our study into
+detection. It contains images of german roads with visible road signs which take
+up a fraction of the image itself.
+\begin{figure}[H]
+    \centering
+    \begin{tabular}{cc}
+    \includegraphics[scale=0.5]{example1.png}&\includegraphics[scale=0.5]{example2.png}\\
+    \includegraphics[scale=0.5]{example4.png}&\includegraphics[scale=0.5]{example3.png}\\
+    \end{tabular}
+    \caption{Some examples of raw data from the dataset}
+    \label{fig:ex1}
+\end{figure}
+\begin{itemize}
+    \item The dataset contains 900 separate images
+    \item The images contain zero to six traffic signs
+    \item The sizes of the traffic signs in the images vary from 16x16 to 128x128
+    \item Traffic signs may appear in every perspective and under every lighting condition
+\end{itemize}
 \section{Implementation}
 
 \subsection{CNN-A}

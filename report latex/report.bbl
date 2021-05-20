@@ -35,6 +35,12 @@ Amal Bouti, Med~A. Mahraz, Jamal Riffi, and Hamid Tairi.
   lenet architecture based on convolutional neural network.
 \newblock {\em Soft computing (Berlin, Germany)}, 24(9):6721--6733, May 2020.
 
+\bibitem{SMOTE}
+N.~V. Chawla, K.~W. Bowyer, L.~O. Hall, and W.~P. Kegelmeyer.
+\newblock Smote: Synthetic minority over-sampling technique.
+\newblock {\em Journal of Artificial Intelligence Research}, 16:321–357, Jun
+  2002.
+
 \bibitem{arachmadi}
 Reza~F. Rachmadi, Keiichi Uchimura, and Yoshinori Komokata.
 \newblock Japan road sign classification using cascade convolutional neural

@@ -211,6 +211,22 @@ INPUT ./images/download.png
 INPUT ./images/download.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/classbalance.png
+INPUT ./images/classbalance.png
+INPUT ./images/classbalance.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/example1.png
+INPUT ./images/example1.png
+INPUT ./images/example1.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/example2.png
+INPUT ./images/example2.png
+INPUT ./images/example2.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/example4.png
+INPUT ./images/example4.png
+INPUT ./images/example4.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/example3.png
+INPUT ./images/example3.png
+INPUT ./images/example3.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/lenet.png
 INPUT ./images/lenet.png
 INPUT ./images/lenet.png
@@ -234,7 +250,6 @@ INPUT ./images/Kresult.png
 INPUT ./images/Kresult.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.bbl
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.bbl
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
