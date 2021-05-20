@@ -223,6 +223,15 @@ INPUT ./images/accuracy1.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/accuracy2.png
 INPUT ./images/accuracy2.png
 INPUT ./images/accuracy2.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/figuremodel1.png
+INPUT ./images/figuremodel1.png
+INPUT ./images/figuremodel1.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/Kresult1.png
+INPUT ./images/Kresult1.png
+INPUT ./images/Kresult1.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/Kresult.png
+INPUT ./images/Kresult.png
+INPUT ./images/Kresult.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.bbl
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.bbl
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
