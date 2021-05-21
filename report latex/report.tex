@@ -220,8 +220,18 @@ up a fraction of the image itself.
     \item The dataset contains 900 separate images
     \item The images contain zero to six traffic signs
     \item The sizes of the traffic signs in the images vary from 16x16 to 128x128
-    \item Traffic signs may appear in every perspective and under every lighting condition
+    \item Traffic signs may appear in every perspective and under every lighting
+    condition
 \end{itemize}
+
+Like GTSRB, this dataset also has 43 classes with an imbalance in numbers.
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.5]{gtsdb.png}}
+    \caption{Class balance point}
+    \label{fig:figurebalance}
+\end{figure}
+
+
 \section{Implementation}
 
 \subsection{CNN-A}

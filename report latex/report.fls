@@ -227,6 +227,9 @@ INPUT ./images/example4.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/example3.png
 INPUT ./images/example3.png
 INPUT ./images/example3.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/gtsdb.png
+INPUT ./images/gtsdb.png
+INPUT ./images/gtsdb.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/lenet.png
 INPUT ./images/lenet.png
 INPUT ./images/lenet.png
