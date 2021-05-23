@@ -9,10 +9,12 @@
 \usepackage{float}
 \usepackage{listings}
 \usepackage{fancyvrb}
-\usepackage{lipsum} % just for the example
+\usepackage{xcolor}
+
 \graphicspath{ {./images/} }
 \setlength{\columnsep}{1cm}
-
+\definecolor{beige}{RGB}{250,250,219}
+\pagecolor{beige}
 %\doublespacing
 %\documentclass[12pt,landscape]{article}
 %\usepackage[a3paper]{geometry}
@@ -23,8 +25,8 @@
 
 \begin{document}
 \maketitle
-\tableofcontents
-\pagebreak
+%\tableofcontents
+%\pagebreak
 
 \begin{multicols}{3}
 \section{Introduction}
@@ -111,9 +113,10 @@ The German Traffic Sign Recognition Benchmark is our first choice. It contains
 used in training.
 
 \begin{itemize}
-    \item As seen from the examples in Figure~\ref{fig:ex} dataset is only
-    useful for classification purposes and not detection, since its items only
-    feature photos of isolated road signs with no irrelevant data in the image.
+    \item As seen from the examples in Figure~\ref{fig:dataset1examples} dataset
+    is only useful for classification purposes and not detection, since its
+    items only feature photos of isolated road signs with no irrelevant data in
+    the image.
     \begin{figure}[H]
         \centering
         \begin{tabular}{cc}
@@ -121,16 +124,16 @@ used in training.
         \includegraphics[scale=1.3]{ex3.png}&\includegraphics[scale=1.3]{ex4.png}\\
         \end{tabular}
         \caption{Some examples of raw data from the dataset}
-        \label{fig:ex}
+        \label{fig:dataset1examples}
     \end{figure}
 
     \item The dataset also contains unequal numbers of items in each class, as
-    seen in Figure~\ref{fig:figure}, which introduces a challenge solved in
+    seen in Figure~\ref{fig:dataset1balance}, which introduces a challenge solved in
     Preprocessing.
     \begin{figure}[H]
         \centerline{\includegraphics[scale = 0.5]{download.png}}
         \caption{Number of items in each class of GTSRB}
-        \label{fig:figure}
+        \label{fig:dataset1balance}
     \end{figure}
 
   \end{itemize}
@@ -163,9 +166,9 @@ dataset.
 
 \paragraph{Dataset Balancing}
 Data imbalance reflects an unequal distribution of classes within the dataset,
-as we can see in Figure~\ref{fig:figure}. This disproportion needs to be leveled
-out for better classification. We do this with two techniques - \emph{undersampling}
-and \emph{oversampling}
+as we can see in Figure~\ref{fig:dataset1balance}. This disproportion needs to
+be leveled out for better classification. We do this with two techniques -
+\emph{undersampling} and \emph{oversampling}
 
 Since we have such a huge imbalance in class values, using either an
 undersampling or oversampling algorithm would not work well. This is why we take
@@ -174,9 +177,9 @@ with values meeting somewhere in the middle of both extremes.
 \begin{figure}[H]
     \centerline{\includegraphics[scale = 0.2]{classbalance.png}}
     \caption{Class balance point}
-    \label{fig:figurebalance}
+    \label{fig:dataset1balancemid}
 \end{figure}
-Figure~\ref{fig:figurebalance} shows a close approximation of the average value
+Figure~\ref{fig:dataset1balancemid} shows a close approximation of the average value
 each class should achieve. Accordingly, we oversample the ones below the line
 and undersample the ones above it.
 
@@ -214,7 +217,7 @@ up a fraction of the image itself.
     \includegraphics[scale=0.5]{example4.png}&\includegraphics[scale=0.5]{example3.png}\\
     \end{tabular}
     \caption{Some examples of raw data from the dataset}
-    \label{fig:ex1}
+    \label{fig:dataset2examples}
 \end{figure}
 \begin{itemize}
     \item The dataset contains 900 separate images
@@ -228,7 +231,7 @@ Like GTSRB, this dataset also has 43 classes with an imbalance in numbers.
 \begin{figure}[H]
     \centerline{\includegraphics[scale = 0.5]{gtsdb.png}}
     \caption{Class balance point}
-    \label{fig:figurebalance}
+    \label{fig:dataset2balance}
 \end{figure}
 
 
@@ -236,20 +239,20 @@ Like GTSRB, this dataset also has 43 classes with an imbalance in numbers.
 
 \subsection{CNN-A}
 Modelling this CNN is very straightforward with Keras. The model we've chosen the
-CNN-A implementation closely resembles LeNet (Figure~\ref{fig:figurelenet}),
+CNN-A implementation closely resembles LeNet (Figure~\ref{fig:lenetstructure}),
 proposed by Yann LeCun et al in 1998. The dataset we've trained the model upon
 is the GTSRB.
 \begin{figure}[H]
     \centerline{\includegraphics[scale = 0.2]{lenet.png}}
     \caption{Generic LeNet structure}
-    \label{fig:figurelenet}
+    \label{fig:lenetstructure}
 \end{figure}
 
 \subsubsection{Structure}
 \begin{figure}[H]
     \centerline{\includegraphics[scale = 0.5]{model.png}}
     \caption{Structure of our CNN-A model}
-    \label{fig:figuremodel}
+    \label{fig:CNNAstructure}
 \end{figure}
 
 The first two layers are convolutions. Layer 1 has a depth of 60, a filter size
@@ -268,7 +271,7 @@ used. A second dropout layer prepares the model for the a last fully connected
 dense layer with class number as size (ie. 43). Softmax is used to return the
 probabilities of each class, and the model is compiled with the Adam optimiser.
 
-\subsubsection{Performance}
+\subsubsection{Performance and Results}
 \begin{figure}[H]
     \centering
     \begin{tabular}{cc}
@@ -276,7 +279,7 @@ probabilities of each class, and the model is compiled with the Adam optimiser.
     \includegraphics[scale=0.45]{accuracy2.png}\\
     \end{tabular}
     \caption{The Loss and Accuracy values throughout the epochs}
-    \label{fig:acc}
+    \label{fig:CNNAaccuracy}
 \end{figure}
 Within 10 epochs, the accuracy of both training and validation is above 0.98,
 after which the model shows minimal improvements and the cost/ gain balance
@@ -284,8 +287,27 @@ becomes unreasonable.
 
 This model achieved formidable results with relatively light training. After
 roughly 30 minutes on Heron labs computers and 10 epochs the test accuracy
-averaged in the 98th percentile. Figure~\ref{fig:acc} shows the relevant values
-throughout training
+averaged in the 98th percentile. Figure~\ref{fig:CNNAaccuracy} shows the
+relevant values throughout training
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.4]{confmat.png}}
+    \caption{Confusion Matrix for CNN-A}
+    \label{fig:CNNAconusionmatrix}
+\end{figure}
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.6]{precisionrecall.png}}
+    \caption{Precision and recall plot}
+    \label{fig:CNNAprecrec}
+\end{figure}
+
+\begin{center}
+\emph{Accuracy(true values, predicted values) $\approx$ 0.99}
+
+\emph{Average precision score, micro-averaged over all classes $\approx$ 0.97}
+\end{center}
+
 
 \subsection{CNN-K}
 Along with the difference in preprocessing, this implementation uses a different
@@ -297,7 +319,7 @@ being concise.
 \begin{figure}[H]
     \centerline{\includegraphics[scale = 0.5]{figuremodel1.png}}
     \caption{Structure of our CNN-K model}
-    \label{fig:figuremodel1}
+    \label{fig:CNNKstructure}
 \end{figure}
 Unlike the CNN-A implementation, this one beings with a convolutional layer of a
 32,32,32 shape. An activation layer preceeds the second convolution. There is a
@@ -315,7 +337,7 @@ and activation layers and the output shape is 43, denoting the classes.
     \includegraphics[scale=0.45]{Kresult.png}\\
     \end{tabular}
     \caption{The Loss and Accuracy values throughout the epochs}
-    \label{fig1:acc}
+    \label{fig:CNNKaccuracy}
 \end{figure}
 The model is fitted with 30 epochs, but as with the previous implementation, the
 accuracy of both training and validation is above 0.98, after which the model
@@ -325,12 +347,13 @@ shows minimal improvements and the cost/gain balance becomes unreasonable.
 \subsection{Faster R-CNN}
 
 \section{Cross-Model Analysis}
+
 \section{Conclusions}
 data goes in and numbers come out and we don't question any of it
 
 
 \bibliographystyle{unsrt}
 \bibliography{References}
-\nocite{*}
+% \nocite{*}
 \end{multicols}
 \end{document}

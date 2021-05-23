@@ -142,8 +142,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-INPUT /usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.aux
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.aux
 OUTPUT /user/HS127/at01053/COM3025/RSC/report latex/report.aux
@@ -177,25 +175,20 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.toc
-INPUT /user/HS127/at01053/COM3025/RSC/report latex/report.toc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-OUTPUT /user/HS127/at01053/COM3025/RSC/report latex/report.toc
-OUTPUT /user/HS127/at01053/COM3025/RSC/report latex/report.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/ex1.png
 INPUT ./images/ex1.png
+OUTPUT /user/HS127/at01053/COM3025/RSC/report latex/report.pdf
 INPUT ./images/ex1.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/ex2.png
 INPUT ./images/ex2.png
@@ -209,9 +202,11 @@ INPUT ./images/ex4.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/download.png
 INPUT ./images/download.png
 INPUT ./images/download.png
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/classbalance.png
 INPUT ./images/classbalance.png
 INPUT ./images/classbalance.png
@@ -242,6 +237,12 @@ INPUT ./images/accuracy1.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/accuracy2.png
 INPUT ./images/accuracy2.png
 INPUT ./images/accuracy2.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/confmat.png
+INPUT ./images/confmat.png
+INPUT ./images/confmat.png
+INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/precisionrecall.png
+INPUT ./images/precisionrecall.png
+INPUT ./images/precisionrecall.png
 INPUT /user/HS127/at01053/COM3025/RSC/report latex/./images/figuremodel1.png
 INPUT ./images/figuremodel1.png
 INPUT ./images/figuremodel1.png
