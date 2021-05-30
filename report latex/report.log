@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.26)  30 MAY 2021 22:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.26)  30 MAY 2021 22:21
 entering extended mode
 **"c:/Users/test/RSC/report latex/report.tex"
 (c:/Users/test/RSC/report latex/report.tex
@@ -553,67 +553,67 @@ File: ./images//confmat.png Graphic file (type png)
 <use ./images//confmat.png>
 Package pdftex.def Info: ./images//confmat.png  used on input line 294.
 (pdftex.def)             Requested size: 346.48836pt x 346.48836pt.
- [2 <./images//classbalance.png> <./images//example1.png (PNG copy)> <./images//example2.png (PNG copy)> <./images//example4.png (PNG copy)> <./images//example3.png (PNG copy)> <./images//gtsdb.png> <./images//lenet.png> <./images//model.png> <./images//accuracy1.png> <./images//accuracy2.png>]
-<./images//precisionrecall.png, id=41, 399.4925pt x 280.04625pt>
+<./images//precisionrecall.png, id=31, 399.4925pt x 280.04625pt>
 File: ./images//precisionrecall.png Graphic file (type png)
 <use ./images//precisionrecall.png>
-Package pdftex.def Info: ./images//precisionrecall.png  used on input line 300.
+Package pdftex.def Info: ./images//precisionrecall.png  used on input line 299.
 (pdftex.def)             Requested size: 239.69734pt x 168.02904pt.
+ [2 <./images//classbalance.png> <./images//example1.png (PNG copy)> <./images//example2.png (PNG copy)> <./images//example4.png (PNG copy)> <./images//example3.png (PNG copy)> <./images//gtsdb.png> <./images//lenet.png> <./images//model.png> <./images//accuracy1.png> <./images//accuracy2.png>]
 <./images//figuremodel1.png, id=42, 567.11874pt x 541.02126pt>
 File: ./images//figuremodel1.png Graphic file (type png)
 <use ./images//figuremodel1.png>
-Package pdftex.def Info: ./images//figuremodel1.png  used on input line 320.
+Package pdftex.def Info: ./images//figuremodel1.png  used on input line 319.
 (pdftex.def)             Requested size: 283.55867pt x 270.50996pt.
 <./images//Kresult1.png, id=43, 388.45125pt x 279.0425pt>
 File: ./images//Kresult1.png Graphic file (type png)
 <use ./images//Kresult1.png>
-Package pdftex.def Info: ./images//Kresult1.png  used on input line 336.
+Package pdftex.def Info: ./images//Kresult1.png  used on input line 335.
 (pdftex.def)             Requested size: 174.80144pt x 125.56795pt.
 <./images//Kresult.png, id=44, 395.4775pt x 279.0425pt>
 File: ./images//Kresult.png Graphic file (type png)
 <use ./images//Kresult.png>
-Package pdftex.def Info: ./images//Kresult.png  used on input line 337.
+Package pdftex.def Info: ./images//Kresult.png  used on input line 336.
 (pdftex.def)             Requested size: 177.96323pt x 125.56795pt.
 
-Overfull \hbox (1.37973pt too wide) in paragraph at lines 335--339
+Overfull \hbox (1.37973pt too wide) in paragraph at lines 334--338
  [][] 
  []
 
 <./images//rcnnimg2.png, id=45, 1720.4275pt x 1022.82124pt>
 File: ./images//rcnnimg2.png Graphic file (type png)
 <use ./images//rcnnimg2.png>
-Package pdftex.def Info: ./images//rcnnimg2.png  used on input line 358.
+Package pdftex.def Info: ./images//rcnnimg2.png  used on input line 357.
 (pdftex.def)             Requested size: 180.63708pt x 107.39159pt.
 <./images//rcnnimg1.png, id=46, 2280.52pt x 1352.05125pt>
 File: ./images//rcnnimg1.png Graphic file (type png)
 <use ./images//rcnnimg1.png>
-Package pdftex.def Info: ./images//rcnnimg1.png  used on input line 359.
+Package pdftex.def Info: ./images//rcnnimg1.png  used on input line 358.
 (pdftex.def)             Requested size: 182.44533pt x 108.1663pt.
 
-Overfull \hbox (11.69748pt too wide) in paragraph at lines 357--361
+Overfull \hbox (11.69748pt too wide) in paragraph at lines 356--360
  [][] 
  []
 
 <./images//lossboxreg.png, id=47, 361.35pt x 228.855pt>
 File: ./images//lossboxreg.png Graphic file (type png)
 <use ./images//lossboxreg.png>
-Package pdftex.def Info: ./images//lossboxreg.png  used on input line 421.
+Package pdftex.def Info: ./images//lossboxreg.png  used on input line 420.
 (pdftex.def)             Requested size: 216.81168pt x 137.31404pt.
 [3 <./images//confmat.png> <./images//precisionrecall.png> <./images//figuremodel1.png> <./images//Kresult1.png> <./images//Kresult.png> <./images//rcnnimg2.png> <./images//rcnnimg1.png>]
 <./images//lossrpnboxreg.png, id=61, 322.20375pt x 210.7875pt>
 File: ./images//lossrpnboxreg.png Graphic file (type png)
 <use ./images//lossrpnboxreg.png>
-Package pdftex.def Info: ./images//lossrpnboxreg.png  used on input line 427.
+Package pdftex.def Info: ./images//lossrpnboxreg.png  used on input line 426.
 (pdftex.def)             Requested size: 193.32373pt x 126.47346pt.
 <./images//lossclassifier.png, id=62, 291.0875pt x 225.84375pt>
 File: ./images//lossclassifier.png Graphic file (type png)
 <use ./images//lossclassifier.png>
-Package pdftex.def Info: ./images//lossclassifier.png  used on input line 433.
+Package pdftex.def Info: ./images//lossclassifier.png  used on input line 432.
 (pdftex.def)             Requested size: 174.65384pt x 135.50728pt.
 <./images//lossobjectness.png, id=63, 301.125pt x 226.8475pt>
 File: ./images//lossobjectness.png Graphic file (type png)
 <use ./images//lossobjectness.png>
-Package pdftex.def Info: ./images//lossobjectness.png  used on input line 439.
+Package pdftex.def Info: ./images//lossobjectness.png  used on input line 438.
 (pdftex.def)             Requested size: 180.67638pt x 136.10954pt.
  (c:/Users\test\RSC\report latex\report.bbl) [4 <./images//lossboxreg.png> <./images//lossrpnboxreg.png> <./images//lossclassifier.png> <./images//lossobjectness.png>] (c:/Users\test\RSC\report latex\report.aux) ) 
 Here is how much of TeX's memory you used:
@@ -625,7 +625,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  87i,14n,89p,443b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "c:/Users\test\RSC\report latex\report.pdf" (4 pages, 9861476 bytes).
+Output written on "c:/Users\test\RSC\report latex\report.pdf" (4 pages, 9861465 bytes).
 PDF statistics:
  100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
