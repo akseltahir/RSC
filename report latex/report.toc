@@ -1,12 +1,11 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
 \contentsline {section}{\numberline {2}Related Work}{3}{}%
 \contentsline {section}{\numberline {3}Architectures}{4}{}%
 \contentsline {subsection}{\numberline {3.1}CNN}{4}{}%
-\contentsline {subsection}{\numberline {3.2}R-CNN}{5}{}%
-\contentsline {subsection}{\numberline {3.3}Faster R-CNN}{5}{}%
+\contentsline {subsection}{\numberline {3.2}R-CNN}{4}{}%
 \contentsline {section}{\numberline {4}Dataset}{5}{}%
-\contentsline {subsection}{\numberline {4.1}GTSRB - German Traffic Sign Recognition Benchmark}{6}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Loading the dataset}{7}{}%
+\contentsline {subsection}{\numberline {4.1}GTSRB - German Traffic Sign Recognition Benchmark}{5}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Loading the dataset}{6}{}%
 \contentsline {subsubsection}{\numberline {4.1.2}Preprocessing data}{7}{}%
 \contentsline {paragraph}{Dataset Balancing}{7}{}%
 \contentsline {paragraph}{Image Augmentation}{8}{}%

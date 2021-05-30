@@ -78,7 +78,18 @@ and SVM greatly improves the results obtained and shows good results in terms of
 accuracy. The linear SVM not only achieves high accuracy but also costs least
 compared with another kernel function" \citep[6722 A. Bouti et al]{Recognition1}
 
-[Add info about R-CNN too. That'd be pretty useful]
+In \citep{Han2018} the authors consider an RCNN RSR implementation for less than ideal
+vision conditions - They state that there are already promising results for RCNN
+demonstatrions where the traffic signs are clear, large and unobstructed. They
+point out that there are not many models which work well with video surveillance
+footage or driver recorder videos. They propose a more robust real-time small
+sign decetion based on revised Faster RCNN.
+
+More specifically, they use a small region proposal generator to extract the
+characteristics of small traffic signs. They then combine the revised RCNN with
+Online Hard Examples Mining (OHEM) to locate the regions of small traffic signs.
+Their approach heralds good results both as an experiment and as a potentially
+real-life application
 
 \section{Architectures}
 This project is based entirely on image recognition, the models we have decided

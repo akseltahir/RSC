@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Classification1}
 Smit Mehta, Chirag Paunwala, and Bhaumik Vaidya.
@@ -34,6 +34,12 @@ Amal Bouti, Med~A. Mahraz, Jamal Riffi, and Hamid Tairi.
 \newblock A robust system for road sign detection and classification using
   lenet architecture based on convolutional neural network.
 \newblock {\em Soft computing (Berlin, Germany)}, 24(9):6721--6733, May 2020.
+
+\bibitem{Han2018}
+Cen Han, Guangyu Gao, and Yu~Zhang.
+\newblock Real-time small traffic sign detection with revised faster-{RCNN}.
+\newblock {\em Multimedia Tools and Applications}, 78(10):13263--13278, August
+  2018.
 
 \bibitem{girshick2014rich}
 Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
