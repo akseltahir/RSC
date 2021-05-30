@@ -619,6 +619,49 @@ INPUT .\images\\Kresult.png
 INPUT .\images\\Kresult.png
 INPUT .\images\\Kresult.png
 INPUT .\images\\Kresult.png
+INPUT .\images\\rcnnimg2.png
+INPUT .\images\\rcnnimg2.png
+INPUT images\\rcnnimg2.png
+INPUT .\images\\rcnnimg2.png
+INPUT .\images\\rcnnimg2.png
+INPUT .\images\\rcnnimg2.png
+INPUT .\images\\rcnnimg2.png
+INPUT .\images\\rcnnimg1.png
+INPUT .\images\\rcnnimg1.png
+INPUT images\\rcnnimg1.png
+INPUT .\images\\rcnnimg1.png
+INPUT .\images\\rcnnimg1.png
+INPUT .\images\\rcnnimg1.png
+INPUT .\images\\rcnnimg1.png
+INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT .\images\\lossboxreg.png
+INPUT .\images\\lossboxreg.png
+INPUT images\\lossboxreg.png
+INPUT .\images\\lossboxreg.png
+INPUT .\images\\lossboxreg.png
+INPUT .\images\\lossboxreg.png
+INPUT .\images\\lossboxreg.png
+INPUT .\images\\lossrpnboxreg.png
+INPUT .\images\\lossrpnboxreg.png
+INPUT images\\lossrpnboxreg.png
+INPUT .\images\\lossrpnboxreg.png
+INPUT .\images\\lossrpnboxreg.png
+INPUT .\images\\lossrpnboxreg.png
+INPUT .\images\\lossrpnboxreg.png
+INPUT .\images\\lossclassifier.png
+INPUT .\images\\lossclassifier.png
+INPUT images\\lossclassifier.png
+INPUT .\images\\lossclassifier.png
+INPUT .\images\\lossclassifier.png
+INPUT .\images\\lossclassifier.png
+INPUT .\images\\lossclassifier.png
+INPUT .\images\\lossobjectness.png
+INPUT .\images\\lossobjectness.png
+INPUT images\\lossobjectness.png
+INPUT .\images\\lossobjectness.png
+INPUT .\images\\lossobjectness.png
+INPUT .\images\\lossobjectness.png
+INPUT .\images\\lossobjectness.png
 INPUT c:\Users\test\RSC\report latex\report.bbl
 INPUT c:\Users\test\RSC\report latex\report.bbl
 INPUT c:\Users\test\RSC\report latex\report.bbl
@@ -627,6 +670,10 @@ INPUT c:\Users\test\RSC\report latex\report.aux
 INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\enc\dvips\cm-super\cm-super-ts1.enc
 INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
+INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
+INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\test\AppData\Local\Programs\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmr17.pfb

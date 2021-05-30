@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.26)  26 MAY 2021 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.5.26)  30 MAY 2021 22:04
 entering extended mode
 **"c:/Users/test/RSC/report latex/report.tex"
 (c:/Users/test/RSC/report latex/report.tex
@@ -579,19 +579,55 @@ Overfull \hbox (1.37973pt too wide) in paragraph at lines 335--339
  [][] 
  []
 
-(c:/Users\test\RSC\report latex\report.bbl) [3 <./images//confmat.png> <./images//precisionrecall.png> <./images//figuremodel1.png> <./images//Kresult1.png> <./images//Kresult.png>] (c:/Users\test\RSC\report latex\report.aux) ) 
+<./images//rcnnimg2.png, id=45, 1720.4275pt x 1022.82124pt>
+File: ./images//rcnnimg2.png Graphic file (type png)
+<use ./images//rcnnimg2.png>
+Package pdftex.def Info: ./images//rcnnimg2.png  used on input line 358.
+(pdftex.def)             Requested size: 180.63708pt x 107.39159pt.
+<./images//rcnnimg1.png, id=46, 2280.52pt x 1352.05125pt>
+File: ./images//rcnnimg1.png Graphic file (type png)
+<use ./images//rcnnimg1.png>
+Package pdftex.def Info: ./images//rcnnimg1.png  used on input line 359.
+(pdftex.def)             Requested size: 182.44533pt x 108.1663pt.
+
+Overfull \hbox (11.69748pt too wide) in paragraph at lines 357--361
+ [][] 
+ []
+
+<./images//lossboxreg.png, id=47, 361.35pt x 228.855pt>
+File: ./images//lossboxreg.png Graphic file (type png)
+<use ./images//lossboxreg.png>
+Package pdftex.def Info: ./images//lossboxreg.png  used on input line 421.
+(pdftex.def)             Requested size: 216.81168pt x 137.31404pt.
+[3 <./images//confmat.png> <./images//precisionrecall.png> <./images//figuremodel1.png> <./images//Kresult1.png> <./images//Kresult.png> <./images//rcnnimg2.png> <./images//rcnnimg1.png>]
+<./images//lossrpnboxreg.png, id=61, 322.20375pt x 210.7875pt>
+File: ./images//lossrpnboxreg.png Graphic file (type png)
+<use ./images//lossrpnboxreg.png>
+Package pdftex.def Info: ./images//lossrpnboxreg.png  used on input line 427.
+(pdftex.def)             Requested size: 193.32373pt x 126.47346pt.
+<./images//lossclassifier.png, id=62, 291.0875pt x 225.84375pt>
+File: ./images//lossclassifier.png Graphic file (type png)
+<use ./images//lossclassifier.png>
+Package pdftex.def Info: ./images//lossclassifier.png  used on input line 433.
+(pdftex.def)             Requested size: 174.65384pt x 135.50728pt.
+<./images//lossobjectness.png, id=63, 301.125pt x 226.8475pt>
+File: ./images//lossobjectness.png Graphic file (type png)
+<use ./images//lossobjectness.png>
+Package pdftex.def Info: ./images//lossobjectness.png  used on input line 439.
+(pdftex.def)             Requested size: 180.67638pt x 136.10954pt.
+ (c:/Users\test\RSC\report latex\report.bbl) [4 <./images//lossboxreg.png> <./images//lossrpnboxreg.png> <./images//lossclassifier.png> <./images//lossobjectness.png>] (c:/Users\test\RSC\report latex\report.aux) ) 
 Here is how much of TeX's memory you used:
- 14638 strings out of 479300
- 288639 string characters out of 2854041
- 579913 words of memory out of 3000000
- 31854 multiletter control sequences out of 15000+200000
- 409750 words of font info for 48 fonts, out of 3000000 for 9000
+ 14684 strings out of 479300
+ 289776 string characters out of 2854041
+ 581173 words of memory out of 3000000
+ 31893 multiletter control sequences out of 15000+200000
+ 410109 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,89p,439b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "c:/Users\test\RSC\report latex\report.pdf" (3 pages, 819814 bytes).
+ 87i,14n,89p,443b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/test/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "c:/Users\test\RSC\report latex\report.pdf" (4 pages, 9861476 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 100 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -227,7 +227,7 @@ up a fraction of the image itself.
     condition
 \end{itemize}
 
-Like GTSRB, this dataset also has 43 classes with an imbalance in numbers.
+Like GTSRB, this dataset also has 43 classes (or 44 when counting the background as a class) with an imbalance in numbers.
 \begin{figure}[H]
     \centerline{\includegraphics[scale = 0.5]{gtsdb.png}}
     \caption{Class balance point}
@@ -321,7 +321,7 @@ being concise.
     \caption{Structure of our CNN-K model}
     \label{fig:CNNKstructure}
 \end{figure}
-Unlike the CNN-A implementation, this one beings with a convolutional layer of a
+Unlike the CNN-A implementation, this one begins with a convolutional layer of a
 32,32,32 shape. An activation layer preceeds the second convolution. There is a
 second activation, after which the data is reshaped in a max pooling grid.
 
@@ -329,7 +329,7 @@ It undergoes dropout and flattening, and the 8th layer is the first dense layer.
 Another activation and dropout later, the data passes through the final dense
 and activation layers and the output shape is 43, denoting the classes.
 
-\subsubsection{Performance}
+\subsubsection{Performance and Results}
 \begin{figure}[H]
     \centering
     \begin{tabular}{cc}
@@ -343,15 +343,124 @@ The model is fitted with 30 epochs, but as with the previous implementation, the
 accuracy of both training and validation is above 0.98, after which the model
 shows minimal improvements and the cost/gain balance becomes unreasonable.
 
-\subsection{R-CNN}
 \subsection{Faster R-CNN}
+The Faster R-CNN of our project is based on the implementation found at the
+open-source repository by github user \citep[Haxothermic]{Haxothermic}. 
+\subsubsection{Augmentation}
+Running the source code is straightforward after installing the needed libraries
+and adapting it to our dataset. We begin with data loading and augmentation. The
+latter is done with the built-in transform functions in PyTorch. The augmented
+results are shown in Figure~\ref{fig:RCNNaugmentation}. 
 
-\section{Cross-Model Analysis}
+\begin{figure}[H]
+    \centering
+    \begin{tabular}{cc}
+    \includegraphics[scale=0.105]{rcnnimg2.png}&
+    \includegraphics[scale=0.08]{rcnnimg1.png}\\
+    \end{tabular}
+    \caption{The image before and after augmentation via the PyTorch functions}
+    \label{fig:RCNNaugmentation}
+\end{figure}
+
+\subsubsection{Defining model and loading data}
+\begin{itemize}
+    \item We declare the train and test datasets by calling the myDataset class
+    which was defined earlier.
+    \item Afterwards, we split the dataset into two 4:1 Train to Test approximately.
+    \item Using PyTorch's DataLoader to load data.
+    \item Defining the model - Faster RCNN with a pretrained ResNet50 backbone
+    network is used to finetune according to our dataset.
+    \item Defining all the parameters required for training. (Using SGD as
+    optimizer, Cosine Annealing/Decreasing Warm Restarts as learning rate
+    scheduler which decreases the initial learning rate set in a cosine manner
+    until a restart; the lr is set back to the initial lr and the cycle repeats,
+    number of epochs = 1000)
+    \item Declaring all the variable to be retrieved from the COCO Evaluation
+    metrics.
+    \item We start training the model and then evaluate the performance on test
+    set.
+\end{itemize}
+
+\subsubsection{Performance and Results}
+To discuss the performance we must first set some terminology:
+\begin{itemize}
+    \item \emph{True Positive \textbf{(TP)}} - Results where the Intersection
+    Over Union (IOU) over the predicted bounding box and ground truth is at
+    least equal to the threshold.
+
+    \[\frac{Intersection Over Union}{Predicted Ground Box+Ground Truth} \geq
+    Threshold\]
+
+    \item \emph{False Positive \textbf{(FP)}}
+
+    \[\frac{Intersection Over Union}{Predicted Ground Box+Ground Truth} <
+    Threshold\]
+
+    \item \emph{Average Precision \textbf{(AP)}} - The number of true positives
+    in the resulting bounding boxes.
+
+    \item \emph{Average Recall \textbf{(AR)}} - The proportion of true positives
+    out of possible positives.
+\end{itemize}
+
+The following can be inferred from the stats of the last iteration:
+\begin{itemize}
+    \item The AP at IoU = 0.5-0.95 for large areas is 0.800 which means that when
+    the model detects an object with large area, 80\% of the time it matches the
+    ground truth objects.
+
+    \item The AR  at IoU = 0.5-0.95 for large is 0.800 which means that the
+    model detects 80\% of objects with large area, correctly.
+
+    \item For medium and small areas, the model does not do well. This is
+    probably caused by the size of the dataset and the insufficient number of
+    examples for small and medium sized objects.
+\end{itemize}
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.6]{lossboxreg.png}}
+    \caption{Loss Box Reg - The measure of how tightly the model predicted the bounding box around the true object. It can be observed that the model works well to fit the bbox tightly to the object.}
+    \label{fig:LosBoxReg}
+\end{figure}
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.6]{lossrpnboxreg.png}}
+    \caption{Loss RPN Box Reg - This measures the performance of the network for retrieving the region proposals. The plot shows that further training or tweaking the hyperparameters may be required to decrease the loss. This may require more data to improve the results significantly.}
+    \label{fig:LossRPNBoxReg}
+\end{figure}
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.6]{lossclassifier.png}}
+    \caption{Loss Classifier - This measures the performance of the object classification for detected bounding boxes. The plot shows that the model performs well in classifying the objects in the detected bounding boxes.}
+    \label{fig:LossClassifier}
+\end{figure}
+
+\begin{figure}[H]
+    \centerline{\includegraphics[scale = 0.6]{lossobjectness.png}}
+    \caption{Loss Objectness - This measures the performance of network for retrieving bounding boxes which contain an object. We can infer that the model is detecting the object very well.}
+    \label{fig:LossObjectness}
+\end{figure}
 
 \section{Conclusions}
-data goes in and numbers come out and we don't question any of it
+%data goes in and numbers come out and we don't question any of it
 
+In this project we tried to propose a road sign recognition system with two
+distinct phases - Classification and Detection. For the classification phase we
+adapted a LeNet CNN model and another CNN model with highly successful results.
+For our detection phase we used an RCNN model with some room for future
+improvement. We used the german road sign datasets for classification and
+detection, both of which had to undergo some preprocessing to achieve good
+results.
 
+Our concluding observations are that using CNN and RCNN technologies remains an
+incredibly robust option for any recognition software, and has many potential
+real-life uses given the right development and optimisation.
+
+Future work may include using different datasets to expand the model with more
+classes and examples, fine-tuning our RCNN model for better detection,
+implementing more variants of RCNN, fusing our CNN and RCNN implementations into
+one, etc. The topic at hand is incredibly rich with opportunity, so it is only a
+matter of time.
 \bibliographystyle{unsrt}
 \bibliography{References}
 % \nocite{*}

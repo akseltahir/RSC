@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: References.bib
 Warning--empty booktitle in Classification4
 Warning--empty journal in Classification5
-You've used 7 entries,
+You've used 8 entries,
             1791 wiz_defined-function locations,
-            498 strings with 4880 characters,
-and the built_in function-call counts, 2190 in all, are:
-= -- 196
-> -- 85
+            503 strings with 4964 characters,
+and the built_in function-call counts, 2308 in all, are:
+= -- 204
+> -- 89
 < -- 3
-+ -- 31
-- -- 24
-* -- 150
-:= -- 316
-add.period$ -- 23
-call.type$ -- 7
-change.case$ -- 7
++ -- 33
+- -- 25
+* -- 151
+:= -- 333
+add.period$ -- 25
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 103
-empty$ -- 211
-format.name$ -- 24
-if$ -- 515
+cite$ -- 10
+duplicate$ -- 108
+empty$ -- 229
+format.name$ -- 25
+if$ -- 543
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 8
 missing$ -- 7
-newline$ -- 39
-num.names$ -- 7
-pop$ -- 25
+newline$ -- 43
+num.names$ -- 8
+pop$ -- 32
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 68
+skip$ -- 72
 stack$ -- 0
 substring$ -- 183
-swap$ -- 41
+swap$ -- 42
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 16
-width$ -- 8
-write$ -- 79
+while$ -- 17
+width$ -- 9
+write$ -- 87
 (There were 2 warnings)
