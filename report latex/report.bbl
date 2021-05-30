@@ -35,6 +35,11 @@ Amal Bouti, Med~A. Mahraz, Jamal Riffi, and Hamid Tairi.
   lenet architecture based on convolutional neural network.
 \newblock {\em Soft computing (Berlin, Germany)}, 24(9):6721--6733, May 2020.
 
+\bibitem{girshick2014rich}
+Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation, 2014.
+
 \bibitem{SMOTE}
 N.~V. Chawla, K.~W. Bowyer, L.~O. Hall, and W.~P. Kegelmeyer.
 \newblock Smote: Synthetic minority over-sampling technique.

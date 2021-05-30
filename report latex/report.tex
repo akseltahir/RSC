@@ -103,10 +103,24 @@ any significant differences. Aksel's CNN implementation will be referred to as
 (CNN-A) and Kieran's as (CNN-K).
 
 \subsection{R-CNN}
-At the time of writing the R-CNN model has not been implemented.
+RCNN, short for "Region-based Convolutional Neural Networks" is an AI model
+described by \citep[Girshick et al.]{girshick2014rich} that is often used for
+cases such as image recognition. Two steps make up its core idea - Region
+Proposal and Feature Extraction.
 
-\subsection{Faster R-CNN}
-At the time of writing the Faster-R-CNN model has not been implemented.
+For the region proposal step, it finds a reasonable number of bounding-box
+object region candidates ("region of interest" or "RoI") via selective search.
+The selective search algorithm used for this step tries to identify objects
+based on similar colour, contrast, texture, size, shape, and other features, and
+iteratively combines similar regions to form object proposals.
+
+Then, for Feature Extraction, it takes these proposed objects and runs a CNN
+algorithm to extract their features, which is already described in the previous
+section.
+
+In the original description of RCNN, in order to improve localization
+performance, the authors include a bounding-box regression step to learn
+corrections in the predicted bounding box location and size.
 
 \section{Dataset}
 This project intends to use two datasets to conduct its study to ensure

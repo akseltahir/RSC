@@ -6,12 +6,12 @@
 \citation{Classification5}
 \citation{Recognition1}
 \citation{Recognition1}
+\citation{girshick2014rich}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}Architectures}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}CNN}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}R-CNN}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Faster R-CNN}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {4}Dataset}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}GTSRB - German Traffic Sign Recognition Benchmark}{1}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Some examples of raw data from the dataset}}{1}{}\protected@file@percent }
@@ -37,10 +37,10 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.1}Structure}{2}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Structure of our CNN-A model}}{2}{}\protected@file@percent }
 \newlabel{fig:CNNAstructure}{{7}{2}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Performance and Results}{2}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The Loss and Accuracy values throughout the epochs}}{2}{}\protected@file@percent }
-\newlabel{fig:CNNAaccuracy}{{8}{2}}
 \citation{Haxothermic}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.1.2}Performance and Results}{3}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The Loss and Accuracy values throughout the epochs}}{3}{}\protected@file@percent }
+\newlabel{fig:CNNAaccuracy}{{8}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Confusion Matrix for CNN-A}}{3}{}\protected@file@percent }
 \newlabel{fig:CNNAconusionmatrix}{{9}{3}}
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Precision and recall plot}}{3}{}\protected@file@percent }
@@ -57,7 +57,6 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces The image before and after augmentation via the PyTorch functions}}{3}{}\protected@file@percent }
 \newlabel{fig:RCNNaugmentation}{{13}{3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.2}Defining model and loading data}{3}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Performance and Results}{3}{}\protected@file@percent }
 \bibstyle{unsrt}
 \bibdata{References}
 \bibcite{Classification1}{{1}{}{{}}{{}}}
@@ -66,9 +65,11 @@
 \bibcite{Classification4}{{4}{}{{}}{{}}}
 \bibcite{Classification5}{{5}{}{{}}{{}}}
 \bibcite{Recognition1}{{6}{}{{}}{{}}}
-\bibcite{SMOTE}{{7}{}{{}}{{}}}
-\bibcite{Haxothermic}{{8}{}{{}}{{}}}
+\bibcite{girshick2014rich}{{7}{}{{}}{{}}}
+\bibcite{SMOTE}{{8}{}{{}}{{}}}
+\bibcite{Haxothermic}{{9}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.3.3}Performance and Results}{4}{}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Loss Box Reg - The measure of how tightly the model predicted the bounding box around the true object. It can be observed that the model works well to fit the bbox tightly to the object.}}{4}{}\protected@file@percent }
 \newlabel{fig:LosBoxReg}{{14}{4}}
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Loss RPN Box Reg - This measures the performance of the network for retrieving the region proposals. The plot shows that further training or tweaking the hyperparameters may be required to decrease the loss. This may require more data to improve the results significantly.}}{4}{}\protected@file@percent }
